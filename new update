@@ -1,0 +1,37 @@
+package Generics;
+
+
+public class reverseAG {
+
+public static <E> void printArray(E [] inputArray) {
+		
+		for(int i= inputArray.length - 1 ; i>=0 ; i--){
+			 
+			System.out.printf(inputArray[i] + " ");
+		}
+	}
+	public static void main(String args[]) {
+		// TODO Auto-generated method stub
+
+		Integer[] intArray = { 1 , 2 , 3 , 4};
+		Double[] doubleArray = {1.1 , 2.2 , 3.3 , 4.4};
+		Character[] charArray = {'I', 'A' , 'B' , 'T'};
+		
+		System.out.println("\tARRAY AFTER REVERSE ORDER");
+		System.out.println("\t==========================");
+		
+		    System.out.println("1) Array Reverse Order Of IntArray");
+		
+			printArray(intArray);
+			System.out.println("\n------------------------------");
+		
+			System.out.println("2) Array Reverse Order Of DoubleArray");	
+			printArray(doubleArray);
+			System.out.println("\n------------------------------");	
+			
+			System.out.println("3) Array Reverse Order Of CharArray");	
+				printArray(charArray);
+		}
+	
+}
+		
